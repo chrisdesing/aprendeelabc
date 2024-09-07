@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="340" height="250" viewBox="0 0 68 50" xmlns="http://www.w3.org/2000/svg">
+ <rect width="68" height="50" rx="10" fill="brown"/>
+ <text x="7" y="43" fill="white" font-family="Nimbus Sans L,sans-serif" font-size="50" font-weight="bold">20</text>
+</svg>

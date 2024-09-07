@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendamos el Abecedario</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <audio id="background-music" autoplay loop>
+        <source src="sounds/musica_fondo.mp3" type="audio/mp3">
+    </audio>
+
+    <!-- <h1>APRENDAMOS LAS LETRAS DEL ABECEDARIO</h1> -->
+    <div id="alphabet-container">
+        <div class="alphabet">
+            <button class="letter" data-letter="A">
+                <img src="images/carta-a.png" alt="A" class="letter-icon">
+            </button>
+            <button class="letter" data-letter="B">
+                <img src="images/letra-b.png" alt="B" class="letter-icon">
+            </button>
+            <button class="letter" data-letter="C">
+                <img src="images/letra-c.png" alt="B" class="letter-icon">
+            </button>
+            <button class="letter" data-letter="D">
+                <img src="images/letra-D.png" alt="B" class="letter-icon">
+            </button>
+            <button class="letter" data-letter="E">
+                <img src="images/letra-e.png" alt="E" class="letter-icon">
+            </button>
+            <button class="letter" data-letter="F">
+                <img src="images/letra-f.png" alt="F" class="letter-icon">
+            </button>
+            <button class="letter" data-letter="G">
+                <img src="images/letra-g.png" alt="G" class="letter-icon">
+            </button>
+            <button class="letter" data-letter="H">
+                <img src="images/letra-h.png" alt="H" class="letter-icon">
+            </button>
+            <button class="letter" data-letter="I">
+                <img src="images/letra-i.png" alt="I" class="letter-icon">
+            </button>
+            <button class="letter" data-letter="J">
+                <img src="images/letra-j.png" alt="J" class="letter-icon">
+            </button>
+            <button class="letter" data-letter="K">
+                <img src="images/letra-k.png" alt="K" class="letter-icon">
+            </button>
+            <button class="letter" data-letter="L">
+                <img src="images/letra-l.png" alt="L" class="letter-icon">
+            </button>
+            <button class="letter" data-letter="M">
+                <img src="images/letra-m.png" alt="M" class="letter-icon">
+            </button>
+            <button class="letter" data-letter="N">
+                <img src="images/letra-n.png" alt="N" class="letter-icon">
+            </button>
+            <button class="letter" data-letter="Ñ">
+                <img src="images/letra-n_.png" alt="ñ" class="letter-icon">
+            </button>
+            <button class="letter" data-letter="O">
+                <img src="images/letra-o.png" alt="O" class="letter-icon">
+            </button>
+            <button class="letter" data-letter="P">
+                <img src="images/letra-p.png" alt="P" class="letter-icon">
+            </button>
+            <button class="letter" data-letter="Q">
+                <img src="images/letra-q.png" alt="Q" class="letter-icon">
+            </button>
+            <button class="letter" data-letter="R">
+                <img src="images/letra-r.png" alt="R" class="letter-icon">
+            </button>
+            <button class="letter" data-letter="S">
+                <img src="images/letra-s.png" alt="S" class="letter-icon">
+            </button>
+            <button class="letter" data-letter="T">
+                <img src="images/letra-t.png" alt="T" class="letter-icon">
+            </button>
+            <button class="letter" data-letter="U">
+                <img src="images/letra-u.png" alt="U" class="letter-icon">
+            </button>
+            <button class="letter" data-letter="V">
+                <img src="images/letra-v.png" alt="V" class="letter-icon">
+            </button>
+            <button class="letter" data-letter="W">
+                <img src="images/letra-w.png" alt="W" class="letter-icon">
+            </button>
+            <button class="letter" data-letter="X">
+                <img src="images/letra-x.png" alt="X" class="letter-icon">
+            </button>
+            <button class="letter" data-letter="Y">
+                <img src="images/letra-y.png" alt="Y" class="letter-icon">
+            </button>
+            <button class="letter" data-letter="Z">
+                <img src="images/letra-z.png" alt="Z" class="letter-icon">
+            </button>
+        </div>
+    </div>
+    <div id="letter-sound"></div> <!-- Aquí se mostrará la letra seleccionada -->
+
+    <div id="quiz-container" style="display: none;">
+        <div class="quiz-item">
+            <img id="quiz-image-1" src="" alt="Quiz Image 1">
+            <input type="text" id="answer-1" placeholder="Escribe tu respuesta">
+            <span id="feedback-1"></span>
+        </div>
+        <div class="quiz-item">
+            <img id="quiz-image-2" src="" alt="Quiz Image 2">
+            <input type="text" id="answer-2" placeholder="Escribe tu respuesta">
+            <span id="feedback-2"></span>
+        </div>
+        <div class="quiz-item">
+            <img id="quiz-image-3" src="" alt="Quiz Image 3">
+            <input type="text" id="answer-3" placeholder="Escribe tu respuesta">
+            <span id="feedback-3"></span>
+        </div>
+        <button onclick="checkAnswers()">Verificar Respuestas</button>
+    </div>
+
+  
+
+    <audio id="click-sound" src="sounds/click.mp3"></audio>
+    <audio id="success-sound" src="sounds/correct.mp3"></audio>
+    
+    <script src="script.js"></script>
+</body>
+</html>

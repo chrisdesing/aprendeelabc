@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comic Sans MS', cursive, sans-serif; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e0f7fa; 
+    background-image: url(images/fondo_compu.jpg);
+    background-size: cover;
+}
+
+.container {
+    text-align: center;
+    background-color: #ffffff; 
+    padding: 50px;
+    border-radius: 20px; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); 
+    box-sizing: border-box;
+}
+
+.game-logo {
+    width: 20vw; 
+    height: auto; 
+    max-width: 150px; 
+    margin-bottom: 20px; 
+}
+
+.game-title {
+    font-size: 3em; 
+    color: #00796b; 
+    margin-bottom: 20px;
+}
+
+.start-button {
+    margin-top: 20px;
+    padding: 15px 30px;
+    font-size: 1.5em; 
+    color: #ffffff;
+    background-color: #f57c00; 
+    border: none;
+    border-radius: 10px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.start-button:hover {
+    background-color: #e64a19; 
+    transform: scale(1.1); 
+}
+
+/* Define la animación de rebote con efecto de escala */
+@keyframes rebote {
+    0% {
+        transform: translateY(0) scale(1);
+    }
+    50% {
+        transform: translateY(-100px) scale(1.2); /* Mueve la letra hacia arriba y la agranda */
+    }
+    100% {
+        transform: translateY(0) scale(1); /* Vuelve a su posición original y tamaño */
+    }
+}
+
+/* Aplica la animación a las letras */
+.letra {
+    display: inline-block; /* Permite la animación */
+    font-size: 100px; /* Ajusta el tamaño según sea necesario */
+    animation: rebote 1s ease-in-out infinite; /* Rebote infinito */
+    position: relative; /* Necesario para la animación en un contenedor */
+    color: #ff6347; /* Color atractivo para los niños */
+    font-weight: bold; /* Letra más gruesa para mayor visibilidad */
+}
+@media (max-width: 768px) {
+    .game-logo {
+        width: 120px; /* Ancho del logo en pantallas medianas */
+    }
+    .container{
+        background-image: url(images/fondo_640.jpg);
+        background-size: cover;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        padding-left: 68px;
+        padding-right: 68px;
+        border-radius: 0;
+    }
+    body{
+        /* justify-content: flex-start; */
+
+    }
+    .letra{
+        font-size: 50px;
+    }
+    .start-button{
+        margin-top: 0px;
+        padding: 10px 25px;
+    }
+}
+
+/* Tamaño del logo en pantallas pequeñas */
+@media (max-width: 480px) {
+    .game-logo {
+        width: 100px; /* Ancho del logo en pantallas pequeñas */
+    }
+    .game-title {
+        font-size: 2.2em; /* Tamaño del título más pequeño */
+        margin-bottom: 15px; /* Espacio debajo del título */
+    }
+
+    .start-button {
+        padding: 20px 22px; /* Botón más pequeño */
+        font-size: 1.2em; /* Tamaño de fuente más pequeño */
+    }
+    .container{
+        background-image: url(images/fondo_celu.jpg);
+        background-size: cover;
+        background-position: center;
+        /* padding: 63px; */
+        padding-left: 63px;
+        padding-right: 63px;
+        padding-bottom: 90px;
+        padding-top: 50px;
+    }
+    .letra{
+        font-size: 80px;
+        animation: rebote 1.1s ease-in-out infinite;
+    }
+}
